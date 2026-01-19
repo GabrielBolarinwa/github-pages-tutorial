@@ -1,0 +1,56 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /*  text-align: center;*/
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.currentCount {
+  font-size: clamp(4.5em, 2vw, 6em);
+  font-weight: 900;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1.5em;
+  margin-top: 30px;
+}
+
+.countButtons {
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 18px;
+  transition: 1s;
+}
+
+.countButtons.reset {
+  background: hsl(188, 91.837%, 49%);
+}
+
+.countButtons.increment {
+  background: hsl(120, 100%, 25.098%);
+}
+
+.countButtons.decrement {
+  background: hsl(0, 87.5%, 50%);
+}
+
+.countButtons.decrement:hover {
+  background: hsl(0, 87.5%, 70%);
+}
+
+.countButtons.increment:hover {
+  background: hsl(120, 100%, 45.098%);
+}
+
+.countButtons.reset:hover {
+  background: hsl(188, 91.837%, 69%);
+}
