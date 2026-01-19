@@ -1,12 +1,12 @@
 {
   "name": "github-pages-tutorial",
-  "homepage": "gabrielbolarinwa.github.io/github-pages-tutorial",
+  "homepage": "https://gabrielbolarinwa.github.io/github-pages-tutorial",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -b deployment",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
